@@ -1,0 +1,33 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#4825
+    [34mall[39m: [
+      [34;4mApp\Models\Task[39;24m {#4827
+        [34mid[39m: [35m1[39m,
+        [34mname[39m: "[32mпо дому[39m",
+        [34mdescription[39m: "[32mпогладить кошку, сварить картошку[39m",
+        [34mcreated_at[39m: [36mnull[39m,
+        [34mupdated_at[39m: [36mnull[39m,
+      },
+      [34;4mApp\Models\Task[39;24m {#4828
+        [34mid[39m: [35m2[39m,
+        [34mname[39m: "[32mработа[39m",
+        [34mdescription[39m: "[32mсделать API на Laravel, вывести список задач[39m",
+        [34mcreated_at[39m: [36mnull[39m,
+        [34mupdated_at[39m: [36mnull[39m,
+      },
+      [34;4mApp\Models\Task[39;24m {#4829
+        [34mid[39m: [35m3[39m,
+        [34mname[39m: "[32mкупить[39m",
+        [34mdescription[39m: "[32mшоколад, конфеты, торт[39m",
+        [34mcreated_at[39m: [36mnull[39m,
+        [34mupdated_at[39m: [36mnull[39m,
+      },
+      [34;4mApp\Models\Task[39;24m {#4830
+        [34mid[39m: [35m4[39m,
+        [34mname[39m: "[32mтест[39m",
+        [34mdescription[39m: "[32mтест[39m",
+        [34mcreated_at[39m: "[32m2023-01-30 14:37:17[39m",
+        [34mupdated_at[39m: "[32m2023-01-30 14:37:17[39m",
+      },
+    ],
+  }
+

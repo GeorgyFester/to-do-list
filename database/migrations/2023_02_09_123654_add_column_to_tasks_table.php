@@ -13,10 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('desks', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->timestamps();
+        Schema::table('tasks', function (Blueprint $table) {
+            $table->foreignId('tag_id')->default(1)->constrained();
         });
     }
 
@@ -27,6 +25,9 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('desks');
+        Schema::table('tasks', function (Blueprint $table) {
+            $table->dropForeign('tasks_tag_id_foreign');
+            $table->dropColumn('tag_id');
+        });
     }
 };

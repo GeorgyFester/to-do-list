@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->foreignId('card_id')->constrained();
+            $table->text('description');
             $table->timestamps();
         });
     }
