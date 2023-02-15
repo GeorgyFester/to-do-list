@@ -13,8 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('tasks', function (Blueprint $table) {
-            $table->foreignId('tag_id')->default(1)->constrained();
+        Schema::create('tasks', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->text('description');
+            $table->foreignId('tag_id')->nullable()->constrained();
+            $table->timestamps();
         });
     }
 
@@ -25,9 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('tasks', function (Blueprint $table) {
-            $table->dropForeign('tasks_tag_id_foreign');
-            $table->dropColumn('tag_id');
-        });
+        Schema::dropIfExists('tasks');
     }
 };
